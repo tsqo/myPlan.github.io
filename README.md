@@ -1,2 +1,0 @@
-# myPlan.github.io
-Plan
