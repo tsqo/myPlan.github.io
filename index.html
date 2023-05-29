@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>时间线</title>
+    <link rel="stylesheet" href="css/timeline.css">
+    
+    
+    
+</head>
+
+<body>
+<div class="session5">
+    <div class="w1200">
+        <div class="content">
+
+            <div class="item">
+                <div class="year">2023</div>
+                <div class="historyList">
+                    <div class="historyItem">
+                        <div class="month"><span>12月</span></div>
+                        <div class="txt">
+                            <div class="txtContent">
+                                <p>考研</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="year active">2024</div>
+                <div class="historyList open">
+                    <div class="historyItem">
+                        <div class="month"><span>1月~6月</span></div>
+                        <div class="txt">
+                            <div class="txtContent">
+                                <p>复试毕业学技术</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="historyItem">
+                        <div class="month"><span>暑假7~9月</span></div>
+                        <div class="txt">
+                            <div class="txtContent">
+                                <p>谌男朋友</p>
+                                <p>实习/学习技术补英语</p>
+                                <p>健身</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="year active">研究生</div>
+                <div class="historyList open">
+                    <div class="historyItem">
+                        <div class="month"><span>所有时间</span></div>
+                        <div class="txt">
+                            <div class="txtContent">
+                                <p>1.陪谌考研</p>
+                                <p>2.赚钱</p>
+                                <p>3.学习</p>
+                                <p>4.健身</p>
+                                <p>5.看导师确定方向</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="year">2027</div>
+                <div class="historyList">
+                    <div class="historyItem">
+                        <div class="month"><span>6月</span></div>
+                        <div class="txt">
+                            <div class="txtContent">
+                                <p>毕业娶谌</p>
+                                <p>实习或者直接博士</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<script src="js/jquery.js"></script>
+<script>
+   
+    $('.year').click(function () {
+        let flag = $(this).hasClass('active')
+        if(flag){
+            $(this).removeClass('active').siblings('.historyList').slideUp()
+        }else{
+            $(this).addClass('active').siblings('.historyList').slideDown()
+        }
+    })
+    
+</script>
+
+</body>
+</html>
